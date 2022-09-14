@@ -1,0 +1,75 @@
+.nav-list-item,
+.mailto,
+.telephone {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  cursor: pointer;
+}
+.nav-link,
+.mailto,
+.telephone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-list.list {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+.mailto {
+  margin-right: 50px;
+}
+.nav-link {
+  color: var(--main-text-color);
+  transition: color var(--transition-rules);
+}
+.mailto,
+.telephone {
+  color: var(--secondary-text-color);
+  transition: color var(--transition-rules);
+}
+.nav-link:hover,
+.mailto:hover,
+.telephone:hover,
+.nav-link:focus,
+.mailto:focus,
+.telephone:focus {
+  color: var(--accent-color);
+}
+.nav-list-item {
+  position: relative;
+}
+.nav-link.current {
+  color: var(--accent-color);
+}
+.current::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+.mailto,
+.telephone {
+  display: flex;
+  align-items: center;
+}
+.mailto-icon,
+.telephone-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

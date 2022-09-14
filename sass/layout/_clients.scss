@@ -1,0 +1,27 @@
+.clients-item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item-svg {
+  line-height: 0;
+  display: flex;
+  color: var(--clients-icon-color);
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--clients-icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  transition: border-color var(--transition-rules), color var(--transition-rules);
+}
+.clients-item-svg:hover,
+.clients-item-svg:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.clients-item-icon {
+  fill: currentColor;
+}

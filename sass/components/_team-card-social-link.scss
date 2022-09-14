@@ -1,0 +1,29 @@
+.team-card-social {
+  justify-content: center;
+  gap: 10px;
+}
+.team-card-social-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: var(--team-social-link-color);
+  transition: background-color var(--transition-rules), color var(--transition-rules);
+}
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+  color: var(--team-social-link-act-color);
+}
+.team-card-social-icon {
+  fill: currentColor;
+}
