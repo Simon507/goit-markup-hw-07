@@ -6,7 +6,7 @@
   display: flex;
   text-align: left;
 }
-.subscribe-title {
+.subscribe__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -15,7 +15,7 @@
   color: var(--footer-text-color);
   margin-bottom: 20px;
 }
-.subscribe-field {
+.subscribe-block__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -26,7 +26,7 @@
   padding-left: 16px;
   color: var(--footer-text-color);
 }
-.subscribe-field::placeholder {
+.subscribe-block__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -35,10 +35,10 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-svg {
+.subscribe-button__svg {
   margin-left: 10px;
 }
-.subscribe-icon {
+.subscribe-button__icon {
   fill: var(--act-btn-txt-color);
 }
 .subscribe-button {
@@ -63,5 +63,5 @@
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
-  background-color: var(--hero-btn-act-color);
+  background-color: var(--order-btn-act-color);
 }

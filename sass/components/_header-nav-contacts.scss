@@ -1,4 +1,4 @@
-.nav-list-item,
+.nav-list__item,
 .mailto,
 .telephone {
   display: block;
@@ -6,7 +6,7 @@
   padding-bottom: 32px;
   cursor: pointer;
 }
-.nav-link,
+.nav-list__link,
 .mailto,
 .telephone {
   font-weight: 500;
@@ -18,7 +18,7 @@
 .nav-list {
   display: flex;
 }
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts-list.list {
@@ -29,7 +29,7 @@
 .mailto {
   margin-right: 50px;
 }
-.nav-link {
+.nav-list__link {
   color: var(--main-text-color);
   transition: color var(--transition-rules);
 }
@@ -38,21 +38,21 @@
   color: var(--secondary-text-color);
   transition: color var(--transition-rules);
 }
-.nav-link:hover,
+.nav-list__link:hover,
 .mailto:hover,
 .telephone:hover,
-.nav-link:focus,
+.nav-list__link:focus,
 .mailto:focus,
 .telephone:focus {
   color: var(--accent-color);
 }
-.nav-list-item {
+.nav-list__item {
   position: relative;
 }
-.nav-link.current {
+.nav-list__link-current {
   color: var(--accent-color);
 }
-.current::after {
+.nav-list__link-current::after {
   content: '';
   display: block;
   position: absolute;
@@ -68,8 +68,8 @@
   display: flex;
   align-items: center;
 }
-.mailto-icon,
-.telephone-icon {
+.mailto__icon,
+.telephone__icon {
   fill: currentColor;
   margin-right: 10px;
 }

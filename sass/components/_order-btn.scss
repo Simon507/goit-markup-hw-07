@@ -1,11 +1,11 @@
-.hero-btn {
+.order-btn {
   min-width: 216px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
   font-family: inherit;
-  background-color: var(--hero-btn-color);
+  background-color: var(--order-btn-color);
   color: var(--hero-text-color);
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
@@ -16,9 +16,9 @@
   letter-spacing: 0.06em;
   transition: box-shadow var(--transition-rules), background-color var(--transition-rules);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.order-btn:hover,
+.order-btn:focus {
   cursor: pointer;
-  background-color: var(--hero-btn-act-color);
+  background-color: var(--order-btn-act-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

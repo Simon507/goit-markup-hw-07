@@ -1,11 +1,11 @@
-.clients-item {
+.clients-list__item {
   flex-basis: calc((100% - 150px) / 6);
 }
 
-.clients-item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-item-svg {
+.client-link {
   line-height: 0;
   display: flex;
   color: var(--clients-icon-color);
@@ -17,11 +17,11 @@
   align-items: center;
   transition: border-color var(--transition-rules), color var(--transition-rules);
 }
-.clients-item-svg:hover,
-.clients-item-svg:focus {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.clients-item-icon {
+.client-link__icon {
   fill: currentColor;
 }

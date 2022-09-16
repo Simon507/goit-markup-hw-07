@@ -3,12 +3,10 @@
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-btn.active {
-  color: var(--act-btn-txt-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-    0px 2px 2px rgb(0 0 0 / 12%);
+.porfolio-filter__list:not(:last-child) {
+  margin-right: 8px;
 }
+
 .portfolio-btn {
   cursor: pointer;
   padding-top: 6px;
@@ -27,8 +25,11 @@
   transition: box-shadow var(--transition-rules), background-color var(--transition-rules),
     color var(--transition-rules);
 }
-.porfolio-filter-list:not(:last-child) {
-  margin-right: 8px;
+.portfolio-btn.active {
+  color: var(--act-btn-txt-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {

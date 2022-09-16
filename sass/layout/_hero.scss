@@ -4,7 +4,7 @@
   text-align: center;
   padding-bottom: 200px;
 }
-.hero-overlay {
+.hero__overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -16,7 +16,7 @@
   background-size: cover;
   background-color: var (--hero-bg-color);
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
