@@ -18,12 +18,14 @@
   align-items: center;
   color: var(--team-social-link-color);
   transition: background-color var(--transition-rules), color var(--transition-rules);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--team-social-link-act-color);
+  }
 }
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--team-social-link-act-color);
-}
+
 .social-link__icon {
   fill: currentColor;
 }
@@ -36,11 +38,13 @@
   align-items: center;
   color: var(--footer-text-color);
   transition: background-color var(--transition-rules);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
-.social-link_theme_dark:hover,
-.social-link_theme_dark:focus {
-  background-color: var(--accent-color);
-}
+
 .social-link__icon_theme_dark {
   fill: currentColor;
 }

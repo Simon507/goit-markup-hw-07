@@ -18,8 +18,9 @@
   border: 0;
   cursor: pointer;
   transition: background-color var(--transition-rules);
-}
-.modal-btn-submit:hover,
-.modal-btn-submit:focus {
-  background-color: var(--order-btn-act-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--order-btn-act-color);
+  }
 }

@@ -1,9 +1,9 @@
 .clients-list__item {
   flex-basis: calc((100% - 150px) / 6);
-}
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .client-link {
   line-height: 0;
@@ -16,12 +16,14 @@
   justify-content: center;
   align-items: center;
   transition: border-color var(--transition-rules), color var(--transition-rules);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
-.client-link:hover,
-.client-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
+
 .client-link__icon {
   fill: currentColor;
 }

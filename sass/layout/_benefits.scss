@@ -5,6 +5,10 @@
 .benefits-list__item {
   text-align: left;
   flex-basis: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .benefits-list__svg {
   display: flex;
@@ -17,9 +21,6 @@
 }
 .benefits-list__icon {
   fill: currentColor;
-}
-.benefits-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 .benefits-list__title {
   font-weight: 700;

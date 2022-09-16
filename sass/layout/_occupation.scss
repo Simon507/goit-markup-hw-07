@@ -8,9 +8,10 @@
 .occupation-list__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
-}
-.occupation-list__item:not(:last-child) {
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .occupation-list__title-backdrop {
   display: flex;

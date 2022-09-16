@@ -34,13 +34,11 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   transition: border-color var(--transition-rules);
-}
-.input__field:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-.input__field:focus + .input__icon {
-  fill: var(--accent-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 .input__icon {
   position: absolute;
@@ -49,6 +47,10 @@
   left: 12px;
   fill: inherit;
   transition: fill var(--transition-rules);
+
+  .input__field:focus + & {
+    fill: var(--accent-color);
+  }
 }
 .comment__txt {
   width: 100%;
@@ -66,18 +68,20 @@
   letter-spacing: 0.01em;
   margin-bottom: 20px;
   transition: border-color var(--transition-rules);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.comment__txt:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-.comment__txt::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+
 .checkbox-lable {
   text-align: center;
   justify-content: center;
@@ -98,24 +102,28 @@
   appearance: none;
   position: absolute;
 }
-.classik-checkbox:focus + .modern-checkbox {
-  fill: var(--accent-color);
-}
-.classik-checkbox:checked + .modern-checkbox .modern-checkbox__icon-uncheck {
-  display: none;
-}
-.classik-checkbox:checked + .modern-checkbox .modern-checkbox__icon-check {
-  display: block;
-}
+
 .modern-checkbox {
   margin-right: 7px;
   transition: fill var(--transition-rules);
+
+  .classik-checkbox:focus + & {
+    fill: var(--accent-color);
+  }
 }
 .modern-checkbox__icon-uncheck {
   transition: visibility var(--transition-rules);
+
+  .classik-checkbox:checked + .modern-checkbox & {
+    display: none;
+  }
 }
 .modern-checkbox__icon-check {
   display: none;
+
+  .classik-checkbox:checked + .modern-checkbox & {
+    display: block;
+  }
 }
 .contract-rules {
   text-decoration: none;
@@ -127,7 +135,8 @@
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--accent-color);
-}
-.contract-rules__link:hover {
-  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
