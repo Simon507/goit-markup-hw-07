@@ -1,12 +1,12 @@
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: $fontLogo;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo_theme-light {
+.logo--theme-light {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -15,7 +15,7 @@
 .logo__variable-part {
   color: var(--logo-blue-color);
 }
-.logo_theme-dark {
+.logo--theme-dark {
   color: var(--footer-text-color);
   margin-bottom: 20px;
 }
